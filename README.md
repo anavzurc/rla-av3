@@ -2,7 +2,9 @@
 
 ## Alunas: 
 
-Ana Carolina Aleixo Correa, Ana Valéria Cruz de Sousa e Taís Moreira Barros Souto
+- Ana Carolina Aleixo Correa
+- Ana Valéria Cruz de Sousa
+- Taís Moreira Barros Souto
 
 ## Disciplina:
 
@@ -46,7 +48,7 @@ Cadastro:
 
 ### Pipeline de Execução
 
-
+```
 INÍCIO
  |
 Usuário escolhe CPF ou CNPJ
@@ -70,7 +72,7 @@ Usuário escolhe CPF ou CNPJ
     Geração do CNPJ
        |
     Exibição dos Dados
-
+```
 
 ---
 
