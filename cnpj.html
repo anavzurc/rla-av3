@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+    <title> Gerador de CPF e CNPJ </title>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body class = "home">
+<div id = "tudo">
+    <div class = "topo">
+        <header class = "topo_header">
+            <hgroup>
+                <h1><a href = "index.html">Gerador de CPF e CNPJ</a></h1>
+            </hgroup>
+
+            <ul>
+                <li><a href = "cpf.html"> Gerador CPF </a></li>
+                <li><a href = "cnpj.html"> Gerador CNPJ </a></li>
+                <li><a href = "https://docs.google.com/document/d/1VeXEAHV_yPD2qvkL7-NGHhJZehvSwYSFEC0fkQ0do2w/edit?tab=t.0#heading=h.30j0zll"> Relatório Final</a>  </li>
+            </ul>
+        </header>
+    </div>
+    <div class = "principal">
+        <main class = "container">
+            <div class = "geradorCnpj" style = "order: 1">
+                <h2>Gerador de CNPJ</h2>
+                <form name = "formulario_cnpj">
+                    <label for = "razao_social"> Razão Social: (opcional) </label>
+                    <input type = "text" name = "razao_social" id = "razao_social" value = "">
+                    <p>Nome Fantasia:(opcional)</p>
+                    <input type = "text" name = "nome_fantasia" id = "nome_fantasia" value = "">
+                    <p>Endereço da Empresa: (opcional)</p>
+                    <input type = "text" name = "endereco" id = "endereco" value = "">
+                    <p>Cidade da Empresa: (opcional)</p>
+                    <input type = "text" name = "cidade" id = "cidade" value = "">
+                    <p>Estado da Empresa: (opcional)</p>
+                    <select name = "estados" id = "escolha-estado">
+                        <option value = "">Escolha um estado</option>
+                        <option value = "Acre">AC</option>
+                        <option value = "Alagoas">AL</option>
+                        <option value = "Amapá">AP</option>
+                        <option value = "Amazonas">AM</option>
+                        <option value = "Bahia">BA</option>
+                        <option value = "Ceará">CE</option>
+                        <option value = "Distrito Federal">DF</option>
+                        <option value = "Espírito Santo">ES</option>
+                        <option value = "Goiás">GO</option>
+                        <option value = "Maranhão">MA</option>
+                        <option value = "Mato Grosso">MT</option>
+                        <option value = "Mato Grosso do Sul">MS</option>
+                        <option value = "Minas Gerais">MG</option>
+                        <option value = "Pará">PA</option>
+                        <option value = "Paraíba">PB</option>
+                        <option value = "Paraná">PR</option>
+                        <option value = "Pernambuco">PE</option>
+                        <option value = "Píaui">PI</option>
+                        <option value = "Rio de Janeiro">RJ</option>
+                        <option value = "Rio Grande do Norte">RN</option>
+                        <option value = "Rio Grande do Sul">RS</option>
+                        <option value = "Rondônia">RO</option>
+                        <option value = "Roraima">RR</option>
+                        <option value = "Santa Catarina">SC</option>
+                        <option value = "São Paulo">SP</option>
+                        <option value = "Sergipe">SE</option>
+                        <option value = "Tocantins">TO</option>
+                    </select>
+                    <p>Telefone da Empresa: (opcional)</p>
+                    <input type = "tel" name = "telefone" id = "telefone" value = "">
+                    <p>Email da Empresa: (opcional)</p>
+                    <input type = "email" name = "email" id = "email" value = "">
+                    <input name = "gerarCNPJ" type = "button" value = "Gerar CNPJ"/>
+
+                <div class = "caixaCNPJ" style = "order: 2">
+                    <p>CNPJ:</p>
+                    <div class = "saida-div-container">
+                    <div id = SAIDA_CNPJ></div>
+                    <button name = "copiar_cnpj" type = "button"><img src = "copy.svg" alt = "copy"></button>
+                    </div>
+                    <p>Razão Social:</p>
+                    <div id = SAIDA_RAZAO_SOCIAL></div>
+                    <p>Nome Fantasia:</p>
+                    <div id = SAIDA_NOME_FANTASIA></div>
+                    <p>Endereço:</p>
+                    <div id = SAIDA_ENDERECO></div>
+                    <p>Cidade:</p>
+                    <div id = SAIDA_CIDADE></div>
+                    <p>Estado:</p>
+                    <div id = SAIDA_ESTADO></div>
+                    <p>Telefone:</p>
+                    <div id = SAIDA_TELEFONE></div>
+                    <p>E-mail:</p>
+                    <div id = SAIDA_EMAIL></div>
+                </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <div class = "rodape">
+        <footer>
+            <small> Gerador de CPF e CNPJ - 2026 &copy </small>
+        </footer>
+    </div>
+    <script src = "cnpj.js"></script>
+</div>
+</body>
+</html>
