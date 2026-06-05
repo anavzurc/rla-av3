@@ -22,25 +22,25 @@ O sistema realiza um cadastro simples de pessoas físicas e jurídicas, armazena
 ### Pessoa Física (CPF)
 
 Cadastro:
-Nome completo
-Nome do pai
-Nome da mãe
-Estado (opcional)
-Geração automática de CPF válido
-Associação do nono dígito do CPF à região fiscal correspondente ao estado informado
+- Nome completo
+- Nome do pai
+- Nome da mãe
+- Estado (opcional)
+- Geração automática de CPF válido
+- Associação do nono dígito do CPF à região fiscal correspondente ao estado informado
 
 ### Pessoa Jurídica (CNPJ)
 
 Cadastro:
-Razão Social
-Nome Fantasia
-Endereço
-Cidade
-Estado
-Telefone
-E-mail
-Geração automática de CNPJ válido
-Criação de CNPJ matriz (0001)
+- Razão Social
+- Nome Fantasia
+- Endereço
+- Cidade
+- Estado
+- Telefone
+- E-mail
+- Geração automática de CNPJ válido
+- Criação de CNPJ matriz (0001)
 
 ---
 
@@ -126,6 +126,5 @@ Usuário escolhe CPF ou CNPJ
 
 ---
 
-[!NOTE]
 > Observação: 
 > Como funcionalidade adicional, foi iniciada a implementação de um **gerador de RG**. Mesmo não fazendo parte dos objetivos definidos para o projeto, sua inclusão serviu como estudo complementar sobre validação e geração de documentos. A funcionalidade permanece em desenvolvimento e não impacta o funcionamento dos módulos de CPF e CNPJ.
