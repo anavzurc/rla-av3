@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+    <title> Gerador de CPF e CNPJ </title>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body class = "home">
+<div id = "tudo">
+    <div class = "topo">
+        <header class = "topo_header">
+            <hgroup>
+                <h1><a href = "index.html">Gerador de CPF e CNPJ</a></h1>
+            </hgroup>
+
+            <ul>
+                <li><a href = "cpf.html"> Gerador CPF </a></li>
+                <li><a href = "cnpj.html"> Gerador CNPJ </a></li>
+                <li><a href = "https://docs.google.com/document/d/1VeXEAHV_yPD2qvkL7-NGHhJZehvSwYSFEC0fkQ0do2w/edit?tab=t.0#heading=h.30j0zll"> Relatório Final</a>  </li>
+            </ul>
+        </header>
+    </div>
+    <div class = "principal">
+        <main class = "container">
+            <div class = "geradorCpf">
+                <h2 class = "titulogeradorcpf">Gerador de CPF</h2>
+                <p>1) CPF com pontuação?</p>
+                <form name = "formulario_cpf">
+                    <input type = "radio" id = "sim" name = "decisao" value = "sim">
+                    <label for = "sim">Sim</label>
+                    <input type = "radio" id = "nao" name = "decisao" value = "nao">
+                    <label for = "nao">Não </label>
+                    <p>2) Escolha Estado de origem:</p>
+                    <select name = "estados" id = "escolha-estado">
+                        <option value = "">Sem preferência</option>
+                        <option value = "2">AC</option>
+                        <option value = "4">AL</option>
+                        <option value = "2">AP</option>
+                        <option value = "2">AM</option>
+                        <option value = "5">BA</option>
+                        <option value = "3">CE</option>
+                        <option value = "1">DF</option>
+                        <option value = "7">ES</option>
+                        <option value = "1">GO</option>
+                        <option value = "3">MA</option>
+                        <option value = "1">MT</option>
+                        <option value = "1">MS</option>
+                        <option value = "6">MG</option>
+                        <option value = "2">PA</option>
+                        <option value = "4">PB</option>
+                        <option value = "9">PR</option>
+                        <option value = "4">PE</option>
+                        <option value = "3">PI</option>
+                        <option value = "7">RJ</option>
+                        <option value = "4">RN</option>
+                        <option value = "0">RS</option>
+                        <option value = "2">RO</option>
+                        <option value = "2">RR</option>
+                        <option value = "9">SC</option>
+                        <option value = "8">SP</option>
+                        <option value = "5">SE</option>
+                        <option value = "1">TO</option>
+                    </select>
+                    <p>3) Nome: (opcional)</p>
+                    <input type = "text" name = "nome" id = "nome" value = "">
+                    <p>4) Nome do pai: (opcional)</p>
+                    <input type = "text" name = "pai" id = "pai" value = "">
+                    <p>5) Nome da mãe: (opcional)</p>
+                    <input type = "text" name = "mae" id = "mae" value = "">
+                    <input name = "gerar" type = "button" value = "Gerar CPF"/>
+                    <div class = "CaixaCPF">
+                        <p>REGISTRO <br>GERAL<br></p>
+                        <div id = "SAIDA_RG"></div>
+                        <p>NOME</p>
+                        <div id = "SAIDA_NOME"></div>
+                        <p>FILIAÇÃO</p>
+                        <div id = "SAIDA_FILIACAO"></div>
+                        <p>CPF</p>
+                        <div class = "saida-div-container">
+                            <div id = "SAIDA_CPF"></div>
+                            <button name = "copiar_cpf" type = "button"><img src = "copy.svg" alt = "copy"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <div class = "rodape">
+        <footer>
+            <small> Gerador de CPF e CNPJ - 2026 &copy </small>
+        </footer>
+    </div>
+    <script src = "cpf.js"></script>
+</div>
+</body>
+</html>
