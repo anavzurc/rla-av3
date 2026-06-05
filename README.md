@@ -14,16 +14,16 @@ Raciocínio Lógico Algorítmico, 1º semestre.
 
 ### Descrição
 
-Este projeto foi desenvolvido em JavaScript (além de utilizar HTML para estruturação e CSS para estilização) com o objetivo de gerar números válidos de CPF e CNPJ utilizando os algoritmos oficiais de cálculo dos dígitos verificadores.
+Este projeto foi desenvolvido em **JavaScript** (além de utilizar **HTML** para estruturação e **CSS** para estilização) com o objetivo de gerar números válidos de CPF e CNPJ utilizando os algoritmos oficiais de cálculo dos dígitos verificadores.
 O sistema realiza um cadastro simples de pessoas físicas e jurídicas, armazenando informações fornecidas pelo usuário durante a execução.
 
 ---
 
 ### Funcionalidades
 
-### Pessoa Física (CPF)
+#### Pessoa Física (CPF)
 
-Cadastro:
+ **Cadastro:**
 - Nome completo
 - Nome do pai
 - Nome da mãe
@@ -31,9 +31,9 @@ Cadastro:
 - Geração automática de CPF válido
 - Associação do nono dígito do CPF à região fiscal correspondente ao estado informado
 
-### Pessoa Jurídica (CNPJ)
+#### Pessoa Jurídica (CNPJ)
 
-Cadastro:
+ **Cadastro:**
 - Razão Social
 - Nome Fantasia
 - Endereço
