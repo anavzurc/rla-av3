@@ -1,0 +1,297 @@
+body {
+    font: 17px/1.5 "Comic Sans MS", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fdefe2;
+}
+
+#tudo {
+    width: 100%;
+    overflow: auto;
+    margin: 0 auto;
+    background: #fdefe2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #304540;
+}
+
+.topo {
+    background: #304540;
+}
+
+.topo_header h1 {
+    font-size: 1.2rem;
+    text-align: right;
+    margin: 0;
+    padding: 12px 24px;
+    letter-spacing: 1px;
+}
+
+.topo_header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.topo_header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    padding: 20px 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.principal {
+    width: 100%;
+    padding: 18px 0 19px 0;
+    min-height: calc(100vh - 200px);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+    justify-content: center;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.card_1, .card_2 {
+    width: 16em;
+    height: 16em;
+    background-color: #f8c9ad;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #e0a882;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card_1:hover, .card_2:hover {
+    background-color: #f9d2ba;
+    box-shadow: 4px 4px 12px rgba(69, 93, 80, 0.3);
+    transform: translateY(-4px);
+}
+
+img {
+    width: 9em;
+    height: 9em;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.titulo_card {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #304540;
+}
+
+
+.geradorCpf {
+    background: #fff;
+    border: 2px solid #c8ddd9;
+    border-radius: 20px;
+    padding: 36px 44px;
+    width: 580px;
+    box-shadow: 3px 3px 12px rgba(48, 69, 64, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titulogeradorcpf {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 6px;
+    color: #304540;
+}
+
+.geradorCpf p {
+    margin: 6px 0 2px;
+    font-size: 15px;
+    color: #455d50;
+    font-weight: bold;
+}
+
+
+.geradorCnpj {
+    background: #fff;
+    border: 2px solid #c8ddd9;
+    border-radius: 20px;
+    padding: 36px 44px;
+    width: 580px;
+    box-shadow: 3px 3px 12px rgba(48, 69, 64, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.geradorCnpj h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.geradorCnpj p {
+    margin: 6px 0 2px;
+    font-size: 15px;
+    color: #455d50;
+    font-weight: bold;
+}
+
+.geradorCnpj label {
+    font-size: 15px;
+    color: #455d50;
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+    border: 2px solid #c8ddd9;
+    border-radius: 10px;
+    background: #fdefe2;
+    padding: 0 12px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.2s;
+}
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+    border-color: #304540;
+}
+
+input[type="radio"] {
+    margin-right: 6px;
+    accent-color: #304540;
+}
+
+input[type="button"] {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 16px;
+    background-color: #304540;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 0;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    transition: background 0.2s;
+}
+input[type="button"]:hover {
+    background-color: #4d6e62;
+}
+
+select {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    height: 42px;
+    width: 100%;
+    border: 2px solid #c8ddd9;
+    border-radius: 10px;
+    background: #fdefe2;
+    padding: 0 10px;
+    outline: none;
+    transition: border 0.2s;
+}
+select:focus {
+    border-color: #304540;
+}
+
+
+.CaixaCPF {
+    background-color: #f0fbd9;
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+    border: 2px solid #b2d18a;
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    margin-top: 12px;
+}
+
+.CaixaCPF p {
+    font-weight: bold;
+    margin: 8px 0 2px;
+    color: #304540;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.caixaCNPJ {
+    background-color: #f0fbd9;
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+    border: 2px solid #b2d18a;
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    position: static;
+    left: unset;
+    bottom: unset;
+}
+
+.caixaCNPJ p {
+    font-weight: bold;
+    margin: 8px 0 2px;
+    color: #304540;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.rodape {
+    background: #304540;
+    color: #fff;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 14px;
+    order: 3;
+    letter-spacing: 0.5px;
+}
+
+.saida-div-container {
+    display: flex;
+}
+
+.saida-div-container button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.saida-div-container button img {
+    width: 24px;
+    height: 24px;
+}
+
+#SAIDA_CPF {
+    font-family: monospace;
+    font-size: 16px;
+}
+
