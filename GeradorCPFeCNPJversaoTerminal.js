@@ -58,6 +58,25 @@ function gerarCPF(estado) {
            v1 + "" + v2;
 }
 
+function gerarRG() {
+    let digitos = []
+    let soma = 0;
+    let RG;
+
+    for (let i = 0; i < 8; i++) {
+        digitos[i] = Math.floor(Math.random() * 10);
+    }
+    let pesos1 = [2, 3, 4, 5, 6, 7, 8, 9];
+    for (let i = 0; i < 8; i++) {
+        soma += digitos[i] * pesos1[i];
+    }
+
+    let resto1 = soma % 11;
+    let v1 = resto1 < 2 ? 0 : 11 - resto1;
+
+   return RG = digitos[0] + "" + digitos[1] + "." + digitos[2] + "" + digitos[3] + "" + digitos[4] + "." + digitos[5] + "" + digitos[6] + "" + digitos[7] + "-" + v1
+}
+
 function gerarCNPJ() {
     let digitos = [];
 
@@ -122,6 +141,7 @@ function cadastroCPF() {
     let cpf = gerarCPF(estado);
 
     console.log("=== CADASTRO DE PESSOA FÍSICA ===");
+    console.log("Registro geral:", gerarRG())
     console.log("Nome completo: ", nomeCompleto);
     console.log("Nome do pai: ", nomePai);
     console.log("Nome da mãe: ", nomeMae);
@@ -177,7 +197,7 @@ switch (tipo) {
     case "cnpj":
         cadastroCNPJ();
         break;
-
+    
     default:
         alert("Opção inválida.");
 }
