@@ -127,8 +127,9 @@ Usuário escolhe CPF ou CNPJ
 5. Visualizar os resultados gerados no console.
 
 ---
-> [!NOTE]Observação¹: 
+
+> Observação¹:
 > Como funcionalidade adicional, foi iniciada a implementação de um **gerador de RG**. Mesmo não fazendo parte dos objetivos definidos para o projeto, sua inclusão serviu como estudo complementar sobre validação e geração de documentos. A funcionalidade permanece em desenvolvimento e não impacta o funcionamento dos módulos de CPF e CNPJ.
 
-> [!NOTE]Observação²:
+> Observação²:
 > O projeto foi dividido em 2 partes: **Versão Programiz** (console) e **Versão Web** (interação visual). A versão em **JavaScript puro** foi mantida como implementação principal por estar alinhada aos conteúdos da disciplina. A versão Web foi desenvolvida como uma extensão/melhoria do projeto, com o objetivo de demonstrar a aplicação prática da lógica aprendida durante o semestre em um ambiente visual interativo. As duas versões utilizam os mesmos princípios e algoritmos de geração e validação dos documentos, diferenciando-se apenas pela forma de interação com o usuário.
